@@ -5,7 +5,7 @@ var program = require('../lib/tags.js');
 
 describe('greet', function() {
   it('should return hello plus the name parameter', function(){
-    var testGreet = greet('ted');
+    var testGreet = program.greet('ted');
     expect(testGreet).to.equal('hello ted');
   });
 });
