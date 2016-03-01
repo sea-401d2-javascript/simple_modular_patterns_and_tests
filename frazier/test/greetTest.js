@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var expect = require('chai').expect;
 var greet = require(__dirname + '/../lib/greet.js');
 var greetUtility = require(__dirname + '/../lib/greet-utility.js');
@@ -9,8 +9,20 @@ describe('greet',function(){
     var results = greet(arg);
     expect(results).to.equal('Hello, ' + arg);
   });
+});
+
+describe('greet-utility', function(){
+  beforeEach(function(){
+    this.processArgvStored = process.argv;
+    process.argv = ['stuff', 'stuff', 'Frazier']
+  });
+  
+  afterEach(function(){
+    process.argv = this.processArgvStored;
+  });
+  
   it('should take a name in from proces.argv[2]', function(){
-    process.argv.push('Frazier');
+    
     var results = greetUtility();
     expect(results).to.equal('Hello, ' + process.argv[2]);
   });
