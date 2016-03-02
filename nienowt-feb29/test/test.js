@@ -3,6 +3,7 @@
 var expect = require('chai').expect;
 var greeting = require(__dirname + '/../lib/greet.js');
 var greet = greeting('thorn');
+console.log(greet);
 
 
 describe('greeting', function(){
