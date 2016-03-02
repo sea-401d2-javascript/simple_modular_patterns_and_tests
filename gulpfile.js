@@ -1,13 +1,13 @@
 'use strict';
 var gulp = require('gulp');
-var lint = require('gulp-eslint');
+var eslint = require('gulp-eslint');
 
-var paths = ['*.js', 'lib/greet.js', 'test/greet-test.js'];
+var files = ['*.js', 'test/*.js'];
 
-gulp.task('lint', function(){
-  return gulp.src(paths)
-.pipe(lint())
-    .pipe(lint.format()); //*prints things to the screen*//
+gulp.task('eslint', function(){
+  return gulp.src(files)
+    .pipe(eslint())
+    .pipe(eslint.format()); //*prints things to the screen*//
 });
 
-gulp.task('default', ['lint']);
+gulp.task('default', ['eslint']);
