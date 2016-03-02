@@ -1,7 +1,7 @@
 'use strict';
 
 function greet(name){
-  return "hello, " + name;
+  return 'hello, ' + name;
 }
 
 var args = process.argv.slice(2);
