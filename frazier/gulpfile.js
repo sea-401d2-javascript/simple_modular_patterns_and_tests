@@ -24,3 +24,7 @@ gulp.task('test', ['eslint'], function(){
   return gulp.src('test/greetTest.js')
   .pipe(mocha());
 });
+
+gulp.task('watch', function(){
+  gulp.watch(paths, ['test']);  
+})
