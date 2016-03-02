@@ -2,6 +2,9 @@
 
 var gulp = require('gulp');
 var lint = require('gulp-eslint');
+var mocha = require('gulp-mocha');
+var jshint = require('gulp-jshint')
+
 var paths = ['*.js', 'lib/greet.js', 'test/*.js'];
 
 gulp.task('lint', function(){
@@ -10,4 +13,12 @@ gulp.task('lint', function(){
     .pipe(lint.format());
 });
 
-gulp.task('default', ['lint']);
+gulp.task('mocha', function(){
+
+});
+
+gulp.task('jshint', function(){
+
+});
+
+gulp.task('default', ['lint', 'mocha', 'jshint']);
