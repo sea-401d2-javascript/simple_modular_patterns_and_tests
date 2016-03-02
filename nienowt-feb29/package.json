@@ -14,7 +14,7 @@
     "gulp-mocha": "^2.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "author": "nienowt",
   "license": "ISC"
