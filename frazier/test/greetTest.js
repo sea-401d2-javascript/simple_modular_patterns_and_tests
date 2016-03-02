@@ -14,7 +14,7 @@ describe('greet',function(){
 describe('greet-utility', function(){
   beforeEach(function(){
     this.processArgvStored = process.argv;
-    process.argv = ['stuff', 'stuff', 'Frazier']
+    process.argv = ['stuff', 'stuff', 'Frazier'];
   });
   
   afterEach(function(){
