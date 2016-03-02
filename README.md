@@ -1,5 +1,7 @@
 #Simple Modular and Test Patterns DUE: March 1st, 2016 by 1pm(class start)
 
+turn in for class-02
+
 ##To Submit this Assignment
   * fork this repository
   * write all of your code in a folder containing your name
