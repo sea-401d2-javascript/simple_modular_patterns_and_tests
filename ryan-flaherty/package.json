@@ -1,0 +1,26 @@
+{
+  "name": "ryan-flaherty",
+  "version": "0.0.1",
+  "description": "JS 401 Homework",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Flaherty",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greydays/simple_modular_patterns_and_tests"
+  }
+}
