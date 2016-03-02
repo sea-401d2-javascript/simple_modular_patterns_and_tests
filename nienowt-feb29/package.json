@@ -1,0 +1,21 @@
+{
+  "name": "nienowt",
+  "version": "1.0.0",
+  "description": "Greeting CLI and gulp test/lint",
+  "main": "CLI.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "nienowt",
+  "license": "ISC"
+}
