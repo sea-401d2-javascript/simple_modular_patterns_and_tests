@@ -1,4 +1,4 @@
-  {
+{
   "name": "brandon_feinstein",
   "version": "0.1.0",
   "description": "gulp linting greet assignment",
@@ -6,13 +6,12 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
-    "cool-ascii-faces": "^1.3.3",
     "gulp": "^3.9.1",
-    "gulp-eslint": "^2.0.0"
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-watch": "^4.3.5"
   },
   "scripts": {
     "test": "gulp lint"

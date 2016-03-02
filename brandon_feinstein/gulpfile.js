@@ -1,6 +1,8 @@
 'use strict';
 var gulp = require('gulp');
 var lint = require('gulp-eslint');
+var mocha = require('gulp-mocha');
+// var watch = require('gulp-watch');
 
 var paths = ['*.js', 'greet.js', 'test/*.js'];
 
@@ -10,4 +12,11 @@ gulp.task('lint', function(){
     .pipe(lint.format());
 });
 
-gulp.task('default', ['lint']);
+gulp.task('test', function () {
+  return gulp.src('test/greet-test.js', {read: false})
+	.pipe(mocha({reporter: 'nyan'}));
+});
+
+gulp.task('watch', function () {
+  gulp.watch('*.js', ['lint', 'test']);
+});
